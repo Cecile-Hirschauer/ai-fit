@@ -1,7 +1,8 @@
-
 export default {
-    providers: [{
-        domain: "https://smooth-drum-43.clerk.accounts.dev",
-        applicationId: "convex",
-    }]
-}
+    providers: [
+      {
+        domain: process.env.NEXT_PUBLIC_CONVEX_URL!,
+        applicationID: "convex",
+      },
+    ]
+  };
